@@ -20,11 +20,11 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 
 // set Wi-Fi SSID and password
-const char *ssid = "MTS_Router_005317";
-const char *password = "67903467";
+const char *ssid = "yor_wifi/ваш вайфай";
+const char *password = "password/пороль";
 
 // set location and API key
-String Location = "Yasnyy, RU";
+String Location = "sity, RU"; //например String Location = "moskov, RU";НАЗВАНИЕ ГОРОДА ПИСАТЬ ПО АНГЛИЙСКИ
 String API_Key = "926189bc421bb25be61af536cf415a0b";
 
 void setup(void)
