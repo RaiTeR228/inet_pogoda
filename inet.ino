@@ -1,4 +1,4 @@
-
+//ссылка на api https://openweathermap.org/
 
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h> // http web access library
@@ -25,7 +25,7 @@ const char *password = "password/пороль";
 
 // set location and API key
 String Location = "sity, RU"; //например String Location = "moskov, RU";НАЗВАНИЕ ГОРОДА ПИСАТЬ ПО АНГЛИЙСКИ
-String API_Key = "926189bc421bb25be61af536cf415a0b";
+String API_Key = "API_KEY"; //пример String API_Key = "926189bc421bb25be61af536cf4"; этот api нерабочий
 
 void setup(void)
 {
@@ -72,7 +72,7 @@ void loop()
     HTTPClient http; //Declare an object of class HTTPClient
 
     // specify request destination
-    http.begin(client1, "http://api.openweathermap.org/data/2.5/weather?q=" + Location + "&APPID=" + API_Key); // !!
+    http.begin(client1, "http://api.openweathermap.org/data/2.5/weather?q=" + Location + "&APPID=" + API_Key); // сдесь нечего не трогать, вот ссылка на сайт где брать токен https://openweathermap.org/api
 
     int httpCode = http.GET(); // send the request
 
