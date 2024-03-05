@@ -6,6 +6,7 @@
 // Libraries for SSD1306 OLED display
 #include <Wire.h> // include wire library (for I2C devices such as the SSD1306 display)
 #include <Adafruit_GFX.h> // include Adafruit graphics library
+
 #include <Adafruit_SSD1306.h> // include Adafruit SSD1306 OLED display driver
 #include <iarduino_OLED_txt.h>
 iarduino_OLED_txt myOLED(0x78); 
